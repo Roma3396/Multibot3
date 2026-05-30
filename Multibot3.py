@@ -10,7 +10,7 @@ from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 
 # --- KONFIGURATSIYA ---
-TOKEN = "8511080877:AAEU3z1iTpaj62X6-rowkmVxLJ7iI2ZfXiQ"
+TOKEN = "8511080877:AAHq0UHHP0atu983KlbeXZJzbAnS6Qb4jc4"
 ADMINS = [7829422043, 6881599988]
 CHANNELS = [
     {"id": -1003155796926, "link": "https://t.me/FeaF_Helping"},
