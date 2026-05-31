@@ -1,4 +1,6 @@
 import asyncio
+import threading
+from flask import Flask
 import logging
 import sqlite3
 import os
@@ -319,6 +321,18 @@ async def act_do(call: types.CallbackQuery):
 async def back_cmd(message: types.Message, state: FSMContext):
     await state.clear(); await message.answer("Asosiy menyu", reply_markup=main_menu(message.from_user.id))
 
-async def main(): await dp.start_polling(bot)
-if __name__ == "__main__": asyncio.run(main())
+def run_flask():
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port)
+
+async def main():
+    flask_thread = threading.Thread(target=run_flask)
+    flask_thread.daemon = True
+    flask_thread.start()
+    print("Bot polling boshlandi...")
+    await dp.start_polling(bot)
+
+if __name__ == "__main__":
+    asyncio.run(main())
+  
                    
