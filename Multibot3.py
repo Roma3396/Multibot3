@@ -4,6 +4,8 @@ from flask import Flask
 import logging
 import sqlite3
 import os
+import os
+app = Flask(__name__)
 from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters import CommandStart, Command
 from aiogram.types import (InlineKeyboardMarkup, InlineKeyboardButton, 
