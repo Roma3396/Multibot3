@@ -18,7 +18,7 @@ TOKEN = "8511080877:AAHq0UHHP0atu983KlbeXZJzbAnS6Qb4jc4"
 ADMINS = [7829422043, 6881599988]
 CHANNELS = [
     {"id": -1002797110799, "link": "https://t.me/Fargona_Arenda_Cars"},
-    {"id": -1003646737157, "link": "https://t.me/Disney_Multfilmlar1"} 
+    {"id": -1003929077792, "link": "https://t.me/Film_va_multfilmlar_HD"} 
 ]
 
 logging.basicConfig(level=logging.INFO)
