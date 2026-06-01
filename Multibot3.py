@@ -322,7 +322,10 @@ async def act_do(call: types.CallbackQuery):
 @dp.message(F.text == "🔙 Orqaga")
 async def back_cmd(message: types.Message, state: FSMContext):
     await state.clear(); await message.answer("Asosiy menyu", reply_markup=main_menu(message.from_user.id))
-
+@app.route('/')
+def home():
+    return "Bot is running successfully!"
+  
 def run_flask():
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
