@@ -14,7 +14,7 @@ from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 
 # --- KONFIGURATSIYA ---
-TOKEN = "8511080877:AAHq0UHHP0atu983KlbeXZJzbAnS6Qb4jc4"
+TOKEN = "8511080877:AAE3-JS837c5Ia1ZycjfHIJnrsZ0bCgpQSM"
 ADMINS = [7829422043, 6881599988]
 CHANNELS = [
     {"id": -1002797110799, "link": "https://t.me/Fargona_Arenda_Cars"},
